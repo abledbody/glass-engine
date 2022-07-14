@@ -1,12 +1,18 @@
 [package]
-name = "glass-engine"
+name = "glass_engine"
 version = "0.1.0"
 authors = ["abledbody <drewisakid@gmail.com>"]
 edition = "2021"
 
 [lib]
-crate-type = ["cdylib"]
+name = "glass_engine"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+rust-gpu = "*"
+anyhow = "1.0.58"
+
+[dependencies.num]
+version = "0.4"
+default-features = true
